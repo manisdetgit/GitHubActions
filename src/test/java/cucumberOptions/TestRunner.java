@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 glue="stepDefinitions",
 monochrome = true,
 tags = "@NetBanking",
-plugin = {"pretty", "html:target/cucumber.html","json:target/cucumber.json"} )
+plugin = {"html:target/cucumber.html","json:target/cucumber.json"} )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
