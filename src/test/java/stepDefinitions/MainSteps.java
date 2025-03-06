@@ -20,6 +20,7 @@ public class MainSteps{
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
         Assert.assertEquals(driver.getTitle(), "GreenKart - veg and fruits kart");
+        driver.quit();
 
     }
 
