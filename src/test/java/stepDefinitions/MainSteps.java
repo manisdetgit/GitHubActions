@@ -1,9 +1,12 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
@@ -14,6 +17,9 @@ public class MainSteps{
         // Write code here that turns the phrase above into concrete actions
         //Playwright, Selenium, API code,
         System.out.println("User landed on netbanking page");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+        Assert.assertEquals(driver.getTitle(), "GreenKart - veg and fruits kart");
 
     }
 
